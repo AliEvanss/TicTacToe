@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script defer type="text/javascript" src="script.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIC TAC TOE</title>
+  </head>
+  <header>TIC TAC TOE</header>
+  <body>
+    <div id="header">TIC TAC TOE</div>
+    <form id="addplayers">
+      <label for="player1">Player 1:</label>
+      <input type="text" id="Player1" name="Player 1" />
+      <label for="player2">Player 2:</label>
+      <input type="text" id="Player2" name="Player 2" />
+      <button type="submit">Add Players</button>
+      <div id="player-o">
+        O:
+        <p id="player1name">Player 1</p>
+        <span></span>
+      </div>
+      <div id="player-x">
+        X:
+        <p id="player2name">Player 2</p>
+      </div>
+    </form>
+    <div class="board"></div>
+    <div id="submitbutton">
+      <button type="submit" id="new-game">New Game</button>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+#header {
+  grid-area: 1 / 1 / 2 / 6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: darkmagenta;
+}
+
+#newgame {
+  grid-area: 2 / 1 / 5 / 2;
+}
+/*Score board*/
+
+form {
+  grid-area: 2 / 5 / 5 / 6;
+  height: 10px;
+  width: 150px;
+  margin: 75px;
+  padding: 10px;
+  color: black;
+}
+/*add players*/
+
+.footer {
+  grid-area: 5 / 1 / 6 / 6;
+}
+/*footer*/
+
+.board {
+  grid-area: 2 / 2 / 5 / 5;
+  display: grid;
+  grid-template-columns: repeat(3, 10rem);
+  grid-template-rows: repeat(3, 10rem);
+}
+
+.cell {
+  border: 2px solid black;
+  width: 10rem;
+  height: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blanchedalmond;
+}
+
+#player-0 {
+}
